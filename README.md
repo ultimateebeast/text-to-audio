@@ -1,49 +1,49 @@
 # 🔊 Text-to-Audio PDF Reader (Python)
 
-A Python-based tool that reads aloud the content of a PDF file using text-to-speech (TTS). This application extracts all printable text from a PDF (such as books or documents) and speaks it using the system's default voice.
+A modern, Python-based tool that reads aloud the content of any PDF file using text-to-speech (TTS). Built with `PyPDF2`, `tkinter`, and `pyttsx3`, this application extracts all readable text from a PDF (such as books or documents) and speaks it using your system's voice engine. It now features a visual file picker popup for selecting files easily.
 
 ---
 
 ## 📚 Features
 
-- 📄 Reads and extracts text from any PDF file
-- 🔊 Converts extracted text into audio using TTS
-- 🎧 Speaks content aloud in real-time
-- 🧠 Simple, efficient, and offline — no internet required
+- 📂 Choose PDF file via file picker (no path typing!)
+- 📄 Extracts text from standard, searchable PDF files
+- 🔊 Reads the extracted text aloud using TTS
+- 🧠 Works completely offline — no internet required
+- 🎧 System voice support with adjustable rate/volume
+- 📝 Optional support for summarizing the spoken content *(coming soon)*
 
 ---
 
 ## 🛠 Requirements
 
-Install the required libraries using `pip`:
+Install the required Python libraries:
 
-bash
-pip install PyPDF2
-pip install pyttsx3
-pip install pyaudio
+pip install PyPDF2 pyttsx3 pyaudio colorama
+🧠 tkinter comes pre-installed with Python, no need to install it separately.
 
 ▶️ How to Use
-Clone the repository or download the script:
+Clone the repository:
 
 git clone https://github.com/ultimateebeast/text-to-audio
 cd text-to-audio
+Run the script:
 
-Run the Python script:
-python text_to_audio.py
+python main.py
+Choose a PDF file using the popup file selector.
 
-Enter the PDF file path when prompted.
-The program will extract the text and start reading it aloud.
+The program will extract the text and start reading it aloud using your system's default voice.
 
-📌 Note
-This tool reads all printable text from the given PDF.
+📌 Notes
+Works best with searchable PDFs (not scanned/image-based ones).
 
-Non-standard or image-based PDFs may not produce meaningful results.
+Pages without readable text will be skipped automatically.
 
-Works offline using your system’s built-in voice engine.
+All processing is done locally — your data never leaves your device.
 
 🧑‍💻 Author
 Pratyush Jain
 🔗 GitHub: @ultimateebeast
 
 📄 License
-This project is licensed under the MIT License
+This project is licensed under the MIT License.
